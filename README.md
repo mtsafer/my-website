@@ -1,4 +1,4 @@
-<h1><a href="www.martinsafer.com">martinsafer.com</a></h1>
+<h1><a href="http://www.martinsafer.com">martinsafer.com</a></h1>
 
 <h3>My Personal Website</h3>
 
