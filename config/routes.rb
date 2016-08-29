@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
   get  '/bio' => 'static_pages#bio', as: :bio
+  get  '/projects' => 'static_pages#projects', as: :projects
 
 end

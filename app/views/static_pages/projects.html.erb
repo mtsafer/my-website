@@ -1,0 +1,257 @@
+<div class="projects">
+	<div class="supreme-container">	
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<div class="row">
+			<div class="col-lg-4 col-md-12">
+				<h1>Vezzelution.net</h1>
+				<div class="row">
+					<div class="col-lg-5 col-sm-2 complexity-col">
+						<h3 class="complexity">Complexity: </h3>
+					</div>
+					<div class="col-lg-7 col-sm-10">
+						<div class="progress">
+						  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70"
+						  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+						    3.5 / 5
+						  </div>
+						</div>
+					</div>
+				</div>
+				<h3>Source Code: <%=link_to image_tag("http://www.macupdate.com/images/icons256/39062.png", class: "icon"), "https://github.com/mtsafer/Vezley-Website", target: "_blank"%><span style="font-size:12px"> (github)</span></h3>
+				<div data-toggle="modal" data-target="#vez-features" class="btn btn-info"><span class="glyphicon glyphicon-th-list" ></span> Features</div>
+				<p> I built this website for a twitch streamer named Vezley. At the time of writing this the website has 41 users and over 10 comments a day. I worked closely with Vezley and the community to make the website what it is, altering the website upon request.</p>
+
+
+
+			</div>
+			<div class="col-lg-8 col-md-12 picture-col">
+				<%= link_to image_tag("vez_forum", class: "project"), "http://www.vezzelution.net/", target: "_blank" %>
+			</div>
+		</div>
+		<div class="page-break"></div>
+
+	</div>
+
+
+<!-- MODALS -->
+
+			<!-- Vez Modal -->
+	<div id="vez-features" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Vez Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Vezzelution.net Features</h4>
+	      </div>
+	      <div class="modal-body">
+	        <h2>Authentication <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#authentication"></span></h2>
+	        <ul>
+	        	<li>
+	        		<p>
+	        			Log in via Twitch.tv using the omniauth gem, and create a new user if that user has not logged in before. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-omniauth-snippet"></span>
+	        		</p>
+	        	</li>
+	        </ul>
+	        <h2>The Forum</h2>
+	        <ul>
+	        	<li>
+	        		<p>Useful moderator buttons for managing and moderating the forum. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-mod-buttons-snippet"></span></p>
+	        	</li>
+	        	<li>
+	        		<p>Posts with the most recent activity rise to the top. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-post-order-snippet"></span></p>
+	        	</li>
+	        	<li>
+	        		<p><span class="glyphicon glyphicon-eye-open"></span> icon indicates posts that have either not been read or have unread content, on an individual user basis. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-unread-snippet"></span></p>
+	        	</li>
+	        </ul>
+	        <h2>Customizability</h2>
+	        <ul>
+	        	<li>
+	        		<p>Owner (Vezley) can edit various sections of the site, customizing both text and color, as well as assign mod status to worthy users. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-owner-buttons-snippet"></span></p>
+	        	</li>
+	        </ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+			<!-- Vez Modal explanation -->
+	<div id="vez-omniauth-snippet" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Vez Modal explanation content-->
+	    <div class="modal-content info">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Sessions#create_omniauth</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	        <p>auth = request.env["omniauth.auth"]</p>
+	        <p>user = User.find_by_provider_and_uid(auth["provider"], auth["uid"])</p>
+	        <p>user ||= User.create_with_omniauth(auth)</p>
+	        <h2>Explanation</h2>
+	        <p>request.env["omniauth.auth"] retrieves a hash of user info and assigns it to auth.</p>
+	        <p>User.find_by_provider_and_uid finds the relevant user from the database, and returns nil if that user is not found.</p>
+	        <p>The 3rd line can be confusing to non-ruby coders. ||= acts in the same way the += does. So the 3rd line reads...</p>
+	        <p>"user = user || User.create_with_omniauth(auth)</p>
+	        <p>That is to say, the user = user UNLESS user is nil or false, in which case, make a new user. "create_with_omniauth(auth)" is a User model method that creates a user based on the information stored in the auth hash.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+			<!-- authentication explanation -->
+	<div id="authentication" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Vez Modal explanation content-->
+	    <div class="modal-content info">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">What is authentication?</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<p>"Authentication is a process in which the credentials provided are compared to those on file in a database of authorized users' information on a local operating system or within an authentication server. If the credentials match, the process is completed and the user is granted authorization for access." - searchsecurity.techtarget.com/</p>
+	      	<p>It is the process by which a user logs into a website.</p>
+	      	<% 15.times do %>
+	      		<br>
+	      	<% end %>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+			<!-- mod-buttons-snippet -->
+	<div id="vez-mod-buttons-snippet" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Vez Modal explanation content-->
+	    <div class="modal-content info">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Moderator Buttons</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<%= image_tag("mod-buttons", class: "mod-buttons") %>
+	      	<h2>Explanation</h2>
+	      	<p>Moderators can click the blue gear button to the left of a post and drop up their toolbelt.</p>
+	      	<p>Each button in the toolbelt corresponds to the appropriate URL and http method.</p>
+	      	<p>Stickied posts stick to the top of the list and recieve a thumb-tac icon. Closed threads can no longer be edited or commented on and recieve a lock icon.</p>
+	      	<% 2.times do %>
+	      		<br>
+	      	<% end %>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- post-ordering-snippet -->
+	<div id="vez-post-order-snippet" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Vez Modal explanation content-->
+	    <div class="modal-content info">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Post Ordering</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>@forums = Post.order(sticky: :desc, updated_at: :desc).all</p>
+	      	<h2>Explanation</h2>
+	      	<p>Post.order(...).all returns all of the posts, first by if they are stickied or not, and then ordered again by when they were most recently updated.</p>
+	      	<p>@forums is an instance variable, and therefore becomes available to use within the view. Using embedded ruby, @forums is iterated over and each post is displayed appropriately.</p>
+	      	<% 6.times do %>
+	      		<br>
+	      	<% end %>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- unread-snippet -->
+	<div id="vez-unread-snippet" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Vez Modal explanation content-->
+	    <div class="modal-content info">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Posts#show</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>if logged_in?</p>
+					<p class="indent">viewing = Viewing.find_or_create_by(user_id: current_user.id,
+																					post_id: @post.id)</p>
+					<p class="indent">viewing.view_now</p>
+					<p>end</p>
+					<h2>Explanation</h2>
+					<p>This code is in the Posts#show action, meaning that it gets executed when a user clicks on a post to view it.</p>
+					<p>The 2nd line finds the relevant "Viewing" object from the database, or creates a new one if none could be found. </p>
+					<p>A viewing links a specific user to a specific post, using their id's, and also has a column indicating the last time the user clicked the post.</p>
+					<p>The 3rd line assigns the "viewed_at" column to be right now using a Viewing model method.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+			<!-- owner-buttons-snippet -->
+	<div id="vez-owner-buttons-snippet" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Vez Modal explanation content-->
+	    <div class="modal-content info">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Customizability</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<%= image_tag("owner-edit", class: "mod-buttons") %>
+	      	<h2>Explanation</h2>
+	      	<p>The Owner has the ability to customize text and font color on the website, taking the burden off of the developer of updating such trivial pieces of code. This is achieved through an "InfoBlock" table in the database, which stores color, title, and body of the various info blocks.</p>
+	      	<% 1.times do %>
+	      		<br>
+	      	<% end %>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+
+</div>
