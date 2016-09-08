@@ -1,0 +1,29 @@
+<div class="contact">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-4 col-xs-offset-1">
+				<h4>contact</h4>
+				<p>mtsafer@gmail.com</p>
+				<p>Tel: 206.473.1104</p>
+				<% if @contact.errors.any? %>
+					<ul>
+						<% @contact.errors.full_messages.each do |message| %>
+							<li class="error_message"><%=message%></li>
+						<% end %>
+					</ul>
+				<% else %>
+					<p class="flash-success" ><%= flash[:success] %></p>
+				<% end %>
+			</div>
+			<div class="col-xs-6">
+				<%= form_for @contact do |f| %>
+					<%= f.text_field "name", placeholder: "Name", class: "form-control" %>
+					<%= f.text_field "email", placeholder: "Email", class: "form-control" %>
+					<%= f.text_field "subject", placeholder: "Subject", class: "form-control" %>
+					<%= f.text_area "message", placeholder: "Message", class: "form-control message", rows: 6 %>
+					<%= f.submit "Send", class: "pull-right submit" %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

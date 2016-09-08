@@ -1,0 +1,14 @@
+<div class="resume-page">	
+	<div class="row">
+		<div class="col-xs-2 col-xs-offset-2">
+			<div class="resume-button btn btn-primary">
+				<%= link_to "Download PDF", "/data/resume.pdf", :format => 'pdf', target: "_blank" %>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2">
+			<div class="resume-image"><%= image_tag "resume", class: "resume" %></div>
+		</div>
+	</div>
+</div>
