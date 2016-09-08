@@ -13,12 +13,10 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Resume", '#' %></li>
-        <li><%= link_to "My Story", bio_path %></li>
-        <li><%= link_to "About Me", bio_path %></li>
+        <li><%= link_to "About", root_path %></li>
         <li><%= link_to "Projects", projects_path %></li>
-        <li><%= link_to "Contact", '#' %></li>
+        <li><%= link_to "Resume", "/data/resume.pdf", :format => 'pdf', target: "_blank" %></li>
+        <li><%= link_to "Contact", new_contact_path %></li>
       </ul>
     </div>
   </div>

@@ -3,6 +3,8 @@
   <head>
     <title>Martin</title>
     <link rel="shortcut icon" href="https://cdn0.iconfinder.com/data/icons/ie_Bright/512/internet_earth.png" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,7 +14,6 @@
 
   <body>
   	<div class="container">
-      <%= render 'layouts/flash' %>
   		<%= render 'layouts/header' %> 
     	<%= yield %>
     	<%= render 'layouts/footer' %>

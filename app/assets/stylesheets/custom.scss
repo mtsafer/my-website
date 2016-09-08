@@ -19,10 +19,17 @@ $gray-medium-light: #eaeaea;
   transform: translateY(-50%);
 }
 
+/* Header */
+.navbar-header, .navbar {
+  background-color: #000000;
+  font-family: Arial, 'Merriweather';
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  font-family: 'Open Sans'
 }
 
 h1 {
@@ -30,6 +37,8 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color: #000000;
+  margin-top: 60px;
 }
 
 h2 {
@@ -41,9 +50,18 @@ h2 {
   color: $gray-light;
 }
 
+h3 {
+  color: #717171;
+}
+
+h4{
+  font-size: 20px;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  color: #717171;
 }
 
 /* general */
@@ -52,10 +70,91 @@ p {
   display: inline-block;
 }
 
+.resume-button{
+  margin-left: 40px;
+  margin-top: 60px;
+  background-color: #000000;
+  transition: 0.2s;
+  &:hover{
+    background-color: #2079c7;
+    border-color: #2079c7;
+    transition: 0.5s;
+  }
+  a {
+    color: white;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.resume{
+  margin-bottom: 20px;
+/* 
+  height: 890px;
+  width: auto;
+*/
+}
+.resume-image{
+  text-align: center;
+}
+
+.contact{
+  background: url("https://static.wixstatic.com/media/a83db2_bc61359b5df248d78df182cb1f5b886c.png/v1/fill/w_600,h_497,al_c,usm_0.66_1.00_0.01/a83db2_bc61359b5df248d78df182cb1f5b886c.png") center center no-repeat ;
+  height: 500px;
+  width: 600px;
+  margin: 70px auto;
+
+  .row{
+    margin-top: 30px;
+    h4{
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin: 20px 0px;
+    }
+    p{
+      margin-bottom: 0px;
+      color: #333333;
+    }
+
+    form{
+      margin-top: 15px;
+    }
+
+    input, textarea{
+      margin-bottom: 5px;
+      border: 1px solid black;
+      border-radius: 0;
+      &.submit{
+        background-color: #333333;
+        color: white;
+      }
+      &.message{
+        max-width: 270px;
+        max-height: 134px;
+      }
+    }
+
+    .error_message {
+      color: #b20000;
+    }
+
+    .field_with_errors input, .field_with_errors textarea {
+      border-color: red;
+    }
+
+    .flash-success {
+      margin-top: 40px;
+      color: #2079c7;
+      font-size: 15px;
+    }
+  }
+
+}
+
 /* header */
 
 #logo {
-  font-family: 'Helvetica Neue,Helvetica,sans-serif';
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
@@ -79,9 +178,9 @@ footer {
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
   a {
-    color: $gray;
+    color: #2079c7;
     &:hover {
-      color: $gray-darker;
+      color: #2079c7;
     }
   }
   small {
@@ -111,16 +210,16 @@ footer {
 /* body */
 
 body {
-	background: url(http://www.longlifeplumbing.com.au/wp-content/uploads/2014/06/water-management-systems.jpg) no-repeat center center fixed;
-	background-size: cover
+	background-color: #FFFFFF;
+  font-family: 'Merriweather';
 }
 
 /* home */
 
 .home{
-	.white{
-		color: white;
-	}
+
+  margin-top: 120px;
+
 	.home-photo{
 		width: 100%;
 		height: auto;
@@ -128,16 +227,7 @@ body {
 	.caption{
 		font-size: 0.9em;
 		text-align: center;
-	}
-	h3{
-		text-shadow: 2px 2px black;
-	}
-	p{
-		text-shadow: 1px 1px black;
-	}
-	h1{
-		text-shadow: 1px 1px white;
-    margin-top: 50px;
+    font-family: 'Open Sans'
 	}
 
 	.break {
@@ -156,7 +246,7 @@ body {
     margin-bottom: 45px;
   }
   img.project:hover{
-    box-shadow: 0px 0px 20px white;
+    box-shadow: 0px 0px 20px #2079c7;;
     transition: 0.5s;
   }
 
@@ -165,7 +255,6 @@ body {
   }
 
   color: white;
-  text-shadow: 1px 1px black;
 
   .page-break{
     margin: 20px 0;
@@ -180,7 +269,7 @@ body {
   }
 
   .icon:hover{
-    box-shadow: 0px 0px 20px white;
+    box-shadow: 0px 0px 20px #2079c7;;
     transition: 0.5s;
   }
 
@@ -191,7 +280,7 @@ body {
 
   .glyphicon-question-sign:hover {
     cursor: pointer;
-    text-shadow: 0px 0px 20px white;
+    text-shadow: 0px 0px 20px #2079c7;;
     transition: 0.5s;
   }
 
@@ -233,6 +322,9 @@ body {
     top: 0; left: 0; bottom: 0; right: 0;
     overflow: auto;
     .close{
+      color: white;
+    }
+    p{
       color: white;
     }
   }
