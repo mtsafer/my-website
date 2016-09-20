@@ -5,34 +5,111 @@
 		<br>
 		<br>
 
-		<div class="row">
-			<div class="col-lg-4 col-md-12">
-				<h1>Vezzelution.net</h1>
+		<div class="row project">
+			<h1>Vezzelution.net</h1>
+			<div class="col-lg-7 col-md-12 features-col">
+				<h3>Features</h3>
+				<h2>Authentication <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#authentication"></span></h2>
+        <ul>
+        	<li>
+        		<p>
+        			Log in via Twitch.tv using the omniauth gem, and create a new user if that user has not logged in before. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-omniauth-snippet"></span>
+        		</p>
+        	</li>
+        </ul>
+        <h2>The Forum</h2>
+        <ul>
+        	<li>
+        		<p>Useful moderator buttons for managing and moderating the forum. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-mod-buttons-snippet"></span></p>
+        	</li>
+        	<li>
+        		<p>Posts with the most recent activity rise to the top. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-post-order-snippet"></span></p>
+        	</li>
+        	<li>
+        		<p><span class="glyphicon glyphicon-eye-open"></span> icon indicates posts that have either not been read or have unread content, on an individual user basis. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-unread-snippet"></span></p>
+        	</li>
+        </ul>
+        <h2>Customizability</h2>
+        <ul>
+        	<li>
+        		<p>Owner (Vezley) can edit various sections of the site, customizing both text and color, as well as assign mod status to worthy users. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-owner-buttons-snippet"></span></p>
+        	</li>
+        </ul>
+			</div>
+			<div class="col-lg-5 col-md-12 picture-col">
 				<div class="row">
-					<div class="col-lg-5 col-sm-2 complexity-col">
-						<h3 class="complexity">Complexity: </h3>
+					<div class="col-lg-3 col-sm-2 complexity-col">
+						<h2 class="complexity">Complexity: </h2>
 					</div>
-					<div class="col-lg-7 col-sm-10">
+					<div class="col-lg-8 col-sm-10">
 						<div class="progress">
-						  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70"
+						  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70"
 						  aria-valuemin="0" aria-valuemax="100" style="width:70%">
 						    3.5 / 5
 						  </div>
 						</div>
 					</div>
 				</div>
-				<h3>Source Code: <%=link_to image_tag("http://www.macupdate.com/images/icons256/39062.png", class: "icon"), "https://github.com/mtsafer/Vezley-Website", target: "_blank"%><span style="font-size:12px"> (github)</span></h3>
-				<div data-toggle="modal" data-target="#vez-features" class="btn btn-info"><span class="glyphicon glyphicon-th-list" ></span> Features</div>
-				<p> I built this website for a twitch streamer named Vezley. At the time of writing this the website has 41 users and over 10 comments a day. I worked closely with Vezley and the community to make the website what it is, altering the website upon request.</p>
-
-
-
-			</div>
-			<div class="col-lg-8 col-md-12 picture-col">
+				<h2>Source Code: <%=link_to image_tag("http://www.macupdate.com/images/icons256/39062.png", class: "icon"), "https://github.com/mtsafer/Vezley-Website", target: "_blank"%><span style="font-size:12px"> (github)</span></h2>
+				<div data-toggle="modal" data-target="#vez-features" class="btn btn-info"><span class="glyphicon glyphicon-th-list" ></span> About</div>
 				<%= link_to image_tag("vez_forum.png", class: "project"), "http://www.vezzelution.net/", target: "_blank" %>
 			</div>
 		</div>
 		<div class="page-break"></div>
+
+		<div class="row project">
+			<h1>Chess</h1>
+			<div class="col-lg-7 col-md-12 features-col">
+				<h3>Features</h3>
+				<h2>Serialization <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#serialization"></span></h2>
+        <ul>
+        	<li>
+        		<p>
+        			Player can save the game at any point by typing 'save' into the terminal. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#chess-save-snippet"></span>
+        		</p>
+        	</li>
+        </ul>
+        <h2>The Game</h2>
+        <ul>
+        	<li>
+        		<p>Players can input move coordinates (ie: b2,b4) to move a piece. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#chess-move-snippet"></span></p>
+        	</li>
+        	<li>
+        		<p>Only valid moves are allowed. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#chess-valid-snippet"></span></p>
+        	</li>
+        	<li>
+        		<p> The game properly notifies player when they are in check, and will not allow a player to move into check. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#chess-check-snippet"></span></p>
+        	</li>
+        </ul>
+        <h2>Rendering</h2>
+        <ul>
+        	<li>
+        		<p>The game renders the board in the terminal using unicode.<span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#chess-render-snippet"></span></p>
+        	</li>
+        	<li>
+        		<p>The board is flipped every turn so that the current player is playing from their own perspective.<span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#chess-flip-snippet"></span></p>
+        	</li>
+        </ul>
+			</div>
+			<div class="col-lg-5 col-md-12 picture-col">
+				<div class="row">
+					<div class="col-lg-3 col-sm-2 complexity-col">
+						<h2 class="complexity">Complexity: </h2>
+					</div>
+					<div class="col-lg-8 col-sm-10">
+						<div class="progress">
+						  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+						  aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						    4 / 5
+						  </div>
+						</div>
+					</div>
+				</div>
+				<h2>Source Code: <%=link_to image_tag("http://www.macupdate.com/images/icons256/39062.png", class: "icon"), "https://github.com/mtsafer/Chess", target: "_blank"%><span style="font-size:12px"> (github)</span></h2>
+				<div data-toggle="modal" data-target="#chess-about" class="btn btn-info"><span class="glyphicon glyphicon-th-list" ></span> About</div>
+				<%= link_to image_tag("chess.png", class: "project"), "https://github.com/mtsafer/Chess", target: "_blank" %>
+			</div>
+		</div>
 
 	</div>
 
@@ -43,39 +120,14 @@
 	<div id="vez-features" class="modal fade main" role="dialog">
 	  <div class="modal-dialog">
 
-	    <!-- Vez Modal content-->
+	    <!-- Vez Modal about-->
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Vezzelution.net Features</h4>
+	        <h4 class="modal-title">Vezzelution.net - About</h4>
 	      </div>
 	      <div class="modal-body">
-	        <h2>Authentication <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#authentication"></span></h2>
-	        <ul>
-	        	<li>
-	        		<p>
-	        			Log in via Twitch.tv using the omniauth gem, and create a new user if that user has not logged in before. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-omniauth-snippet"></span>
-	        		</p>
-	        	</li>
-	        </ul>
-	        <h2>The Forum</h2>
-	        <ul>
-	        	<li>
-	        		<p>Useful moderator buttons for managing and moderating the forum. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-mod-buttons-snippet"></span></p>
-	        	</li>
-	        	<li>
-	        		<p>Posts with the most recent activity rise to the top. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-post-order-snippet"></span></p>
-	        	</li>
-	        	<li>
-	        		<p><span class="glyphicon glyphicon-eye-open"></span> icon indicates posts that have either not been read or have unread content, on an individual user basis. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-unread-snippet"></span></p>
-	        	</li>
-	        </ul>
-	        <h2>Customizability</h2>
-	        <ul>
-	        	<li>
-	        		<p>Owner (Vezley) can edit various sections of the site, customizing both text and color, as well as assign mod status to worthy users. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#vez-owner-buttons-snippet"></span></p>
-	        	</li>
-	        </ul>
+	      	<p> I built this website for a twitch streamer named Vezley. At the time of writing this the website has 41 users and over 10 comments a day. I worked closely with Vezley and the community to make the website what it is, altering the website upon request.</p>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -126,7 +178,8 @@
 	        <h4 class="modal-title">What is authentication?</h4>
 	      </div>
 	      <div class="modal-body">
-	      	<p>"Authentication is a process in which the credentials provided are compared to those on file in a database of authorized users' information on a local operating system or within an authentication server. If the credentials match, the process is completed and the user is granted authorization for access." - searchsecurity.techtarget.com/</p>
+	      	<p>"Authentication is a process in which the credentials provided are compared to those on file in a database of authorized users' information on a local operating system or within an authentication server. If the credentials match, the process is completed and the user is granted authorization for access."</p>
+	      	<p>-searchsecurity.techtarget.com</p>
 	      	<p>It is the process by which a user logs into a website.</p>
 	      	<% 15.times do %>
 	      		<br>
@@ -253,5 +306,265 @@
 	  </div>
 	</div>
 
+
+<!-- CHESS MODALS -->
+
+				<!-- chess Modal -->
+	<div id="chess-about" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- chess Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Chess - About</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<p>This was the final project in the ruby section of <a href="http://www.theodinproject.com/" target="_blank">The Odin Project</a>. It brings together various concepts learned through the course. The game is played in the terminal, and heavily relies on OOP. You can view the project outline <a href="http://www.theodinproject.com/ruby-programming/ruby-final-project" target="_blank">here</a>.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- chess Modal -->
+	<div id="serialization" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- chess Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">What is serialization</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<p>"Serialization is the process of translating data structures or object state into a format that can be stored (for example, in a file or memory buffer, or transmitted across a network connection link) and reconstructed later in the same or another computer environment." -wikipedia</p>
+	      	<p>In this case, it is used to save the state of a game, and reload it later upon user request.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- chess Modal -->
+	<div id="chess-save-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- chess Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Save Function</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>def save_game game</p>
+					<p class="indent" >print "Name the save: "</p>
+					<p class="indent">  save_name = gets.chomp.downcase</p>
+					<p class="indent">  Dir.mkdir "saves" unless Dir.exists? "saves"</p>
+					<p class="indent">  file_path = File.join("saves", "#{save_name}")</p>
+					<p class="indent">  File.open(file_path, "w") { |f|</p>
+					<p class="indent2">	   f.write(YAML.dump(game))</p>
+					<p class="indent">  }</p>
+					<p class="indent">  puts "The game has been saved!"</p>
+					<p>end</p>
+					<h2>Explanation</h2>
+					<p>The function is passed the game object, which holds all of the information about the state of the game.</p>
+					<p>The user is then prompted to enter a name for the save, which is then stored in save_name.</p>
+					<p>The saves directory is then created if it does not yet exist.</p>
+					<p>An appropriate file path is then generated and stored in the file_path variable. The path is saves/[save_name]</p>
+					<p>Then the save file is opened (or created if it doesn't exist) and the whole game object is transformed into YAML and written into the save file (f.write(YAML.dump(game))</p>
+					<p>Finally the user is notified that the game has been saved.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- chess Modal -->
+	<div id="chess-move-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- chess Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">User Input</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>def safe_input game</p>
+					<p class="indent">	move = []</p>
+					<p class="indent">	move << safe_input_from(game)</p>
+					<p class="indent">	move << safe_input_to(game)</p>
+					<p class="indent">	move</p>
+					<p>end</p>
+					<p></p>
+					<p>input = safe_input game</p>
+
+					<h2>Explanation</h2>
+					<p>safe_input creates an empty array and then calls safe_input_from and safe_input_to to push two arrays into the move array.</p>
+					<p>The reason for this round about way of retrieving user input, is so that safe_input_to and safe_input_from can sanitize the input at each step.</p>
+					<p>If the user enters invalid data into the console (for instance, 'a9' (which does not exist) they will be prompted to re-enter the move. The safe_input methods also standardize the input to lowercase.</p>
+					<p>Finally, if the user enters 'save' into either of the safe_input methods, it will trigger the save methods.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- chess Modal -->
+	<div id="chess-valid-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- chess Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Valid Moves</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>def next_moves board</p>
+						<p class="indent">moves = [ [ x + 2, y + 1 ], [ x + 2, y - 1 ], [ x + 1, y + 2 ], [ x + 1, y - 2 ],</p>
+						<p class="indent4">[ x - 1, y + 2 ], [ x - 1, y - 2 ], [ x - 2, y + 1 ], [ x - 2, y - 1 ] ]</p>
+						<p class="indent">moves.select { |move| board.on_board? move }</p>
+					<p>end</p>
+					<h2>Explanation</h2>
+					<p>The code above is inside the Knight class.</p>
+					<p>In order to determine what possible moves can be made, a list of moves is generated in an array of all the possible moves a knight can make (turns out there are 8).</p>
+					<p>Then, using ruby's select method, the array of moves is limited to only those that are on the board.</p>
+					<p>The game references this method when deciding if a player can move a piece.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- chess Modal -->
+	<div id="chess-check-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- chess Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Check for Check</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+      		<p>#returns true if player is in check, false otherwise</p>
+					<p>def check player</p>
+					<p class="indent">	in_check = false</p>
+					<p class="indent">	enemy = player.name == "Player1" ? player2 : player1</p>
+					<p class="indent">	enemy.tokens.each do |token|</p>
+					<p class="indent2">		token.each do |piece|</p>
+					<p class="indent3">			if( piece.next_moves(@board).include?(player.tokens[-1][0].position) && !piece.path_blocked?(player.tokens[-1][0].position, @board))</p>
+					<p class="indent4">				in_check = true</p>
+					<p class="indent3">			end</p>
+					<p class="indent2">		end</p>
+					<p class="indent">	end</p>
+					<p class="indent">	in_check</p>
+					<p>end</p>
+					<h2>Explanation</h2>
+					<p>in_check defaults to false.</p>
+					<p>Then, the proper enemy is determined using ruby's ternary operator.</p>
+					<p>Then, each enemy piece is iterated over, and if any enemy piece includes a move that lands on the current player's king piece (and the path for that move is not blocked) then in_check is set to true.</p>
+					<p>in_check is then returned</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- chess Modal -->
+	<div id="chess-render-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- chess Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Rendering Chess</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Whaa? Where's the code?</h2>
+	      	<p>The code for this section is too long to include, but can be found in the repository under Chess/lib/board.rb in the view method (<a href="https://github.com/mtsafer/Chess/blob/master/lib/board.rb" target="_blank">or click here</a>).</p>
+	      	<h2>The Run Down</h2>
+	      	<p>Essentially, each line is rendered individually, and an incrementing count variable is used to create the stagered colors.</p>
+	      	<p>Unicode is used to color the board with dark being "\u2591" and light being "\u2593"</p>
+	      	<p>Unicode for the chess pieces are stored in the token objects in the img variable. Empty spaces have an img variable of " ".</p>
+	      	<p>Using all of this information, I was able to devise a method to accurately print out a visual representation of the board state.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- chess Modal -->
+	<div id="chess-flip-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- chess Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Flipping the board</h4>
+	      </div>
+	      <div class="modal-body">
+	      <h2>Some Code</h2>
+	      	<p>class Game</p>
+	      	<p class="indent">	...</p>
+		      <p class="indent">	def flip_board</p>
+					<p class="indent2">		@player1.tokens.each do |pieces|</p>
+					<p class="indent3">			pieces.each do |piece|</p>
+					<p class="indent4">				piece.flip #should mirror the piece on board</p>
+					<p class="indent3">			end</p>
+					<p class="indent2">		end</p>
+					<p class="indent2">		@player2.tokens.each do |pieces|</p>
+					<p class="indent3">			pieces.each do |piece|</p>
+					<p class="indent4">				piece.flip #should mirror the piece on board</p>
+					<p class="indent3">			end</p>
+					<p class="indent2">		end</p>
+					<p class="indent">	end</p>
+					<p>end</p>
+					<p>class Token</p>
+					<p class="indent">...</p>
+					<p class="indent">def flip</p>
+					<p class="indent2">	@position = [((x-7)*-1),((y-7)*-1)]</p>
+					<p class="indent">end</p>
+					<p>end</p>
+					<h2>Explanation</h2>
+					<p>Game.flip_board applies Token.flip to each and every token in the game.</p>
+					<p>Token.flip take both x and y coordinates, and mirrors them on the board. Since there are 8 positions for each axis, starting at 0, (x-7)*-1 will transform a coordinate to its mirror position.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
 
 </div>
