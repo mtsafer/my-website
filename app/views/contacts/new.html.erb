@@ -5,6 +5,7 @@
 				<h4>contact</h4>
 				<p>mtsafer@gmail.com</p>
 				<p>Tel: 206.473.1104</p>
+				<p><%= link_to image_tag("linkedin", alt: "Linked In", class: "linkedin"), "https://www.linkedin.com/in/martin-safer-428ab3129", target: "_blank" %></p>
 				<% if @contact.errors.any? %>
 					<ul>
 						<% @contact.errors.full_messages.each do |message| %>
