@@ -91,6 +91,12 @@
         		<p>The board is flipped every turn so that the current player is playing from their own perspective.<span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#chess-flip-snippet"></span></p>
         	</li>
         </ul>
+        <h2>Rules</h2>
+        <ul>
+        	<li>
+        		<p>In case you forgot how to play chess.<a href="https://en.wikipedia.org/wiki/Rules_of_chess" target="_blank"><span class="glyphicon glyphicon-question-sign"></span></a></p>
+        	</li>
+        </ul>
 			</div>
 			<div class="col-lg-5 col-md-12 picture-col">
 				<div class="row">
@@ -109,6 +115,121 @@
 				<h2>Source Code: <%=link_to image_tag("http://www.macupdate.com/images/icons256/39062.png", class: "icon"), "https://github.com/mtsafer/Chess", target: "_blank"%><span style="font-size:12px"> (github)</span></h2>
 				<div data-toggle="modal" data-target="#chess-about" class="btn btn-info"><span class="glyphicon glyphicon-th-list" ></span> About</div>
 				<%= link_to image_tag("chess.png", class: "project"), "https://github.com/mtsafer/Chess", target: "_blank" %>
+			</div>
+		</div>
+
+		<div class="page-break"></div>
+
+		<div class="row project">
+			<h1>Mastermind - Web App</h1>
+			<div class="col-lg-7 col-md-12 features-col">
+				<h3>Features</h3>
+        <h2>The Game</h2>
+        <ul>
+        	<li>
+        		<p>Players can input colors using 4 dropdown buttons. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#mastermind-dropdown-snippet"></span></p>
+        	</li>
+        	<li>
+        		<p>Feedback is given to the player based on colors selected (This is the complicated part). <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#mastermind-feedback-snippet"></span></p>
+        	</li>
+        	<li>
+        		<p> The game ends when the player selects the correct colors in the correct order, or runs out of turns. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#mastermind-end-condition-snippet"></span></p>
+        	</li>
+        	<li>
+        		<p> Sessions allow for the game to be played by multiple users at the same time. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#mastermind-session-snippet"></span></p>
+        	</li>
+        </ul>
+        <h2>Display</h2>
+        <ul>
+        	<li>
+        		<p>The game displays feedback using bootstrap grid system.</p>
+        	</li>
+        	<li>
+        		<p>A bootstrap instructions button helps players get acquainted with the game.</p>
+        	</li>
+        </ul>
+        <h2>Rules</h2>
+        <ul>
+        	<li>
+        		<p>In case you forgot how to play mastermind.<a href="https://en.wikipedia.org/wiki/Mastermind_(board_game)" target="_blank"><span class="glyphicon glyphicon-question-sign"></span></a></p>
+        	</li>
+        </ul>
+			</div>
+			<div class="col-lg-5 col-md-12 picture-col">
+				<div class="row">
+					<div class="col-lg-3 col-sm-2 complexity-col">
+						<h2 class="complexity">Complexity: </h2>
+					</div>
+					<div class="col-lg-8 col-sm-10">
+						<div class="progress">
+						  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="75"
+						  aria-valuemin="0" aria-valuemax="100" style="width:75%">
+						    7.5 / 10
+						  </div>
+						</div>
+					</div>
+				</div>
+				<h2>Source Code: <%=link_to image_tag("http://www.macupdate.com/images/icons256/39062.png", class: "icon"), "https://github.com/mtsafer/MasterMind-Online", target: "_blank"%><span style="font-size:12px"> (github)(Web Version)</span></h2>
+				<h2>Source Code: <%=link_to image_tag("http://www.macupdate.com/images/icons256/39062.png", class: "icon"), "https://github.com/mtsafer/MasterMind", target: "_blank"%><span style="font-size:12px"> (github)(Terminal Version)</span></h2>
+				<div data-toggle="modal" data-target="#mastermind-about" class="btn btn-info"><span class="glyphicon glyphicon-th-list" ></span> About</div>
+				<%= link_to image_tag("mastermind.png", class: "project"), "https://cryptic-caverns-91319.herokuapp.com/play", target: "_blank" %>
+			</div>
+		</div>
+
+		<div class="page-break"></div>
+
+		<div class="row project">
+			<h1>Hangman - Web App</h1>
+			<div class="col-lg-7 col-md-12 features-col">
+				<h3>Features</h3>
+				<h2>Serialization <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#serialization"></span></h2>
+        <ul>
+        	<li>
+        		<p>
+        			Player can save or load the game at any point by pressing the appropriate button. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#hangman-save-snippet"></span>
+        		</p>
+        	</li>
+        </ul>
+        <h2>The Game</h2>
+        <ul>
+        	<li>
+        		<p>Players can guess a letter using a form. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#hangman-guess-snippet"></span></p>
+        	</li>
+        	<li>
+        		<p>Invalid guessed don't count, including guessing the same letter twice. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#hangman-guess-check-snippet"></span></p>
+        	</li>
+        	<li>
+        		<p> The game ends when the player completes the word or runs out of guesses. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#hangman-end-condition-snippet"></span></p>
+        	</li>
+        	<li>
+        		<p> Sessions allow for the game to be played by multiple users at the same time. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#hangman-session-snippet"></span></p>
+        	</li>
+        </ul>
+        <h2>Rules</h2>
+        <ul>
+        	<li>
+        		<p>In case you forgot how to play hangman.<a href="https://en.wikipedia.org/wiki/Hangman_(game)" target="_blank"><span class="glyphicon glyphicon-question-sign"></span></a></p>
+        	</li>
+        </ul>
+			</div>
+			<div class="col-lg-5 col-md-12 picture-col">
+				<div class="row">
+					<div class="col-lg-3 col-sm-2 complexity-col">
+						<h2 class="complexity">Complexity: </h2>
+					</div>
+					<div class="col-lg-8 col-sm-10">
+						<div class="progress">
+						  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50"
+						  aria-valuemin="0" aria-valuemax="100" style="width:50%">
+						    5 / 10
+						  </div>
+						</div>
+					</div>
+				</div>
+				<h2>Source Code: <%=link_to image_tag("http://www.macupdate.com/images/icons256/39062.png", class: "icon"), "https://github.com/mtsafer/hangman-online", target: "_blank"%><span style="font-size:12px"> (github)(Web Version)</span></h2>
+				<h2>Source Code: <%=link_to image_tag("http://www.macupdate.com/images/icons256/39062.png", class: "icon"), "https://github.com/mtsafer/Hangman", target: "_blank"%><span style="font-size:12px"> (github)(Terminal Version)</span></h2>
+				<div data-toggle="modal" data-target="#hangman-about" class="btn btn-info"><span class="glyphicon glyphicon-th-list" ></span> About</div>
+				<%= link_to image_tag("hangman.png", class: "project"), "https://stormy-shelf-89128.herokuapp.com/play", target: "_blank" %>
 			</div>
 		</div>
 
@@ -146,7 +267,7 @@
 	    <div class="modal-content info">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Sessions#create_omniauth</h4>
+	        <h4 class="modal-title">Vezzelution - Sessions#create_omniauth</h4>
 	      </div>
 	      <div class="modal-body">
 	      	<h2>Some Code</h2>
@@ -202,7 +323,7 @@
 	    <div class="modal-content info">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Moderator Buttons</h4>
+	        <h4 class="modal-title">Vezzelution - Moderator Buttons</h4>
 	      </div>
 	      <div class="modal-body">
 	      	<%= image_tag("mod-buttons", class: "mod-buttons") %>
@@ -230,7 +351,7 @@
 	    <div class="modal-content info">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Post Ordering</h4>
+	        <h4 class="modal-title">Vezzelution - Post Ordering</h4>
 	      </div>
 	      <div class="modal-body">
 	      	<h2>Some Code</h2>
@@ -258,7 +379,7 @@
 	    <div class="modal-content info">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Posts#show</h4>
+	        <h4 class="modal-title">Vezzelution - Posts#show</h4>
 	      </div>
 	      <div class="modal-body">
 	      	<h2>Some Code</h2>
@@ -289,7 +410,7 @@
 	    <div class="modal-content info">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Customizability</h4>
+	        <h4 class="modal-title">Vezzelution - Customizability</h4>
 	      </div>
 	      <div class="modal-body">
 	      	<%= image_tag("owner-edit", class: "mod-buttons") %>
@@ -361,7 +482,7 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Save Function</h4>
+	        <h4 class="modal-title">Chess - Save Function</h4>
 	      </div>
 	      <div class="modal-body">
 	      	<h2>Some Code</h2>
@@ -399,7 +520,7 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">User Input</h4>
+	        <h4 class="modal-title">Chess - User Input</h4>
 	      </div>
 	      <div class="modal-body">
 	      	<h2>Some Code</h2>
@@ -434,7 +555,7 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Valid Moves</h4>
+	        <h4 class="modal-title">Chess - Valid Moves</h4>
 	      </div>
 	      <div class="modal-body">
 	      	<h2>Some Code</h2>
@@ -465,7 +586,7 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Check for Check</h4>
+	        <h4 class="modal-title">Chess - Check for Check</h4>
 	      </div>
 	      <div class="modal-body">
 	      	<h2>Some Code</h2>
@@ -504,11 +625,11 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Rendering Chess</h4>
+	        <h4 class="modal-title">Chess - Rendering Chess</h4>
 	      </div>
 	      <div class="modal-body">
 	      	<h2>Whaa? Where's the code?</h2>
-	      	<p>The code for this section is too long to include, but can be found in the repository under Chess/lib/board.rb in the view method (<a href="https://github.com/mtsafer/Chess/blob/master/lib/board.rb" target="_blank">or click here</a>).</p>
+	      	<p>The code for this section is too long to include, but can be found in the repository under Chess/lib/board.rb in the view method (<a href="https://github.com/mtsafer/Chess/blob/master/lib/board.rb#LC27" target="_blank">or click here</a>).</p>
 	      	<h2>The Run Down</h2>
 	      	<p>Essentially, each line is rendered individually, and an incrementing count variable is used to create the stagered colors.</p>
 	      	<p>Unicode is used to color the board with dark being "\u2591" and light being "\u2593"</p>
@@ -531,7 +652,7 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Flipping the board</h4>
+	        <h4 class="modal-title">Chess - Flipping the board</h4>
 	      </div>
 	      <div class="modal-body">
 	      <h2>Some Code</h2>
@@ -559,6 +680,331 @@
 					<h2>Explanation</h2>
 					<p>Game.flip_board applies Token.flip to each and every token in the game.</p>
 					<p>Token.flip takes both x and y coordinates, and mirrors them on the board. Since there are 8 positions for each axis, starting at 0, (x-7)*-1 will transform a coordinate to its mirror position.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+<!-- MASTERMIND MODALS -->
+
+	<!-- mastermind Modal -->
+	<div id="mastermind-about" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- mastermind Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Mastermind - About</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<p>This web app is made in Sinatra, a lightweight, rails-esque framework. The actual work behind the game is adapted from the terminal game that I made as part of the odin project. You can find the project outline <a target="_blank" href="http://www.theodinproject.com/ruby-programming/oop">here</a> (scroll down to project 2, about half way down the page).</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- mastermind Modal -->
+	<div id="mastermind-dropdown-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- mastermind Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Mastermind - Dropdown Snippet</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>guess1 = params["spot-1"][0]</p>
+					<p>guess2 = params["spot-2"][0]</p>
+					<p>guess3 = params["spot-3"][0]</p>
+					<p>guess4 = params["spot-4"][0]</p>
+					<p>guesses = [guess1, guess2, guess3, guess4]</p>
+					<p> . . . </p>
+					<p>session[:game].take_turn(guesses)</p>
+	      	<h2>Explanation</h2>
+	      	<p>Each guess is submited in the form and stored in params[]. The guesses variable is then passed to game.take_turn(), so that the game object can progress to the next turn. </p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- mastermind Modal -->
+	<div id="mastermind-feedback-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- mastermind Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Mastermind - Feedback Snippet</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Whaa, where's the code?</h2>
+	      	<p>The code for this section is too long to include, but can be found in MasterMind.rb, line 51, or click <a href="https://github.com/mtsafer/MasterMind-Online/blob/master/MasterMind.rb#LC51" target="_blank">here</a>.</p>
+	      	<h2>Explanation - The Problem</h2>
+	      	<p>To understand the solution, first we need to understand the problem. The main challenge of this project, was properly notifying the user of correct, incorrect, and wrong location guesses. If a user inputs a correct color, in the correct location, then they recieve exactly one indicator of a correct match. If the user has a correct color, but it's in the wrong location, then they recieve exactly one indicator of an incorrect location. If the user submits a color that is not in the answer at all, then they recieve no notification.</p>
+	      	<p>However, and this is where it starts to get tricky, if the answer is red, green, blue, red, and the user submits yellow, red, yellow yellow, then they should only recieve a single indicator of an incorrect position, even though there are two reds in the answer. This is because they only submitted a single red.</p>
+	      	<p>What's more, the input needs to be sorted correct then incorrect. That is to say, it does NOT line up with the actual guesses.</p>
+	      	<br>
+	      	<p>Okay, now that that's out of the way, let's explain some of the code.</p>
+	      	<h2>Explanation - The Code</h2>
+	      	<p>It took me some time to come to the solution, which was only after I realized I needed a way to know if the set_feedback() method had analyzed a position of the secret yet. So in order to achieve this, I converted the secret array into a secret array of hashes, where at each index, :guess pointed to the secret value, and :looked pointed to a boolean, indicating if that guess location has been addressed yet.</p>
+	      	<p>Then, the guesses were evaluated twice, the first time, looking for perfect matches. When a perfect match was found, the appropriate indicator was added to the feedback array, and :looked was set to true for that position in the secret.</p>
+	      	<p>The second evaluation (beginning on line 60) checks each value of the guess, and if it finds a match anywhere in the secret (excluding the perfect matches from the first evaluation), then it pushes the appropriate indicator to the feedback array, and again sets the :looked key to true in the secret at the proper index.</p>
+	      	<p>Finally, after both evaluations are complete, all of the :looked keys are reset to false, and the feedback array is returned.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- mastermind Modal -->
+	<div id="mastermind-end-condition-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- mastermind Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Mastermind - End Condition Snippet</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>def has_ended(guesses)</p>
+						<p class="indent">ended = false</p>
+						<p class="indent">ended = true if @turn >= 12</p>
+						<p class="indent">ended = check_feedback(guesses) unless ended</p>
+						<p class="indent">ended = end_state if ended</p>
+						<p class="indent">ended</p>
+					<p>end</p>
+	      	<h2>Explanation</h2>
+	      	<p>First, ended defaults to false.</p>
+	      	<p>Then, if the turn counter has exceeded 11 (starts at 0 giving 12 turns total), then ended is true.</p>
+	      	<p>Then, ended is assigned to check_feedback(guesses), which returns true if the feedback says all guesses are correct, and false otherwise. This code is only executed if the game hasn't ended yet, using ruby's unless syntax.</p>
+	      	<p>Next, if ended is not equal to false (ie: it's true), then ended is assigned to end_state(), which simply returns "You Won!" if the game ended before or on turn 12, and "You Lose!" if the game ended after turn 12.</p>
+	      	<p>Finally, ended is returned. At this point, ended will be false if the game is not over, but it will be a string containing the end state if the game is over.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- mastermind Modal -->
+	<div id="mastermind-session-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- mastermind Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Mastermind - Sessions</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>session[:game] = MasterMind.new</p>
+	      	<h2>Explanation</h2>
+	      	<p>Among other objects, game is stored in a session and assigned to a new MasterMind object. This allows multiple users to play the game simultaneously without interfering with eachother's games.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+<!-- HANGMAN MODALS -->
+
+	<!-- hangman Modal -->
+	<div id="hangman-about" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- hangman Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Hangman - About</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<p>This web app is made in Sinatra, a lightweight, rails-esque framework. The actual work behind the game is adapted from the terminal game that I made as part of the odin project. You can find the project outline <a target="_blank" href="http://www.theodinproject.com/ruby-programming/file-i-o-and-serialization">here</a> (scroll down to hangman, about half way down the page).</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- hangman Modal -->
+	<div id="hangman-save-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- hangman Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Hangman - Save</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>def save(game)</p>
+						<p class="indent">save_name = game.fill_in_word + " (#{session[:game].guesses})"</p>
+						<p class="indent">Dir.mkdir "saves" unless Dir.exists? "saves"</p>
+						<p class="indent">file_path = File.join("saves", "#{save_name}")</p>
+						<p class="indent">File.open(file_path, "w") { |f|</p>
+						<p class="indent2">	f.write(YAML.dump(game))</p>
+						<p class="indent">}</p>
+					<p>end</p>
+	      	<h2>Explanation</h2>
+	      	<p>save_name is assigned to the current word concatenated with the number of wrong geuses left in parentheses. (ie: "_e__o_(2)") </p>
+	      	<p>Then a saves directory is created if one does not already exist.</p>
+	      	<p>Next, file_path is assigned to saves/save_name.</p>
+	      	<p>Finally, file_path is opened and the entire game object is converted to YAML and written to the file.</p>
+	      	<p>This save file can later be opened by selecting it from the load menu.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- hangman Modal -->
+	<div id="hangman-guess-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- hangman Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Hangman - Guess</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>session[:guess] = params["guess"]</p>
+					<p>session[:guess].downcase! if session[:guess]</p>
+					<p>session[:game].guess_letter(session[:guess])</p>
+	      	<h2>Explanation</h2>
+	      	<p>After submitting a guess, it is saved in params["guess"], which gets assigned to session[:guess] (the current user's guess).</p>
+	      	<p>The guess is then set to lowercase, and then passed to game.guess_letter().</p>
+	      	<p>From there the game will properly handle the case, and do nothing if the input is not valid (eg: a number or symbol).</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- hangman Modal -->
+	<div id="hangman-guess-check-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- hangman Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Hangman - Guess Check</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>def guess_letter(guess)</p>
+						<p class="indent">if (guess && guess.between?('a','z') && !(@guessed_letters.include? guess)
+							&& guess.length == 1)</p>
+							<p class="indent2">process_guess(guess)</p>
+							<p class="indent2">@guessed_letters << guess</p>
+							<p class="indent2">@turns += 1</p>
+						<p class="indent">end</p>
+					<p>end</p>
+
+	      	<h2>Explanation</h2>
+	      	<p>The if statement checks that guess exists, guess is a lowercase letter, guess has not been guessed before, and guess is only a single character long.</p>
+	      	<p>If all of these conditions are met, then the guess is processed, the guess is added to the guessed_letters array, and the turns variable is incremented by 1. </p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- hangman Modal -->
+	<div id="hangman-end-condition-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- hangman Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Hangman - End Condition</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>#returns true if the game has ended, false otherwise</p>
+					<p>def ended?</p>
+						<p class="indent">ended = false</p>
+						<p class="indent">ended = true if(!(@fill_in_word.include? "_") || @guesses <= 0)</p>
+						<p class="indent">ended</p>
+					<p>end</p>
+	      	<h2>Explanation</h2>
+	      	<p>ended defaults to false, and then is set to true only if the word no longer has any blank spaces, or if there are no guesses left.</p>
+	      	<p>ended is then returned.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- hangman Modal -->
+	<div id="hangman-session-snippet" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- hangman Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Hangman - Sessions</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Some Code</h2>
+	      	<p>def new_game</p>
+					<p class="indent">	game = Hangman.new</p>
+					<p class="indent">	game.dictionary.close_dictionary</p>
+					<p class="indent">	game</p>
+					<p>end</p>
+					<p></p>
+					<p>session[:game] = new_game</p>
+	      	<h2>Explanation</h2>
+	      	<p>The new_game method creates and returns a new Hangman object. It also destroys the dictionary object used to find the random word to play with.</p>
+
+	      	<p>Then the game object returned from new_game is stored in session[:game]. This means that each user can play the game independantly of other users.</p>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
