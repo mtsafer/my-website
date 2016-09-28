@@ -296,7 +296,7 @@ body {
     border-bottom: 1px solid #717171;
   }
 
-  .btn-info{
+  .btn-info, .btn-success{
     margin-bottom: 20px;
   }
 
@@ -439,4 +439,22 @@ body.modal-open .supreme-container{
     -ms-filter: blur(2px);
     filter: blur(2px);
     transition: 1s;
+}
+
+.template-wrap.clear{
+  position: relative;
+  width: 100%;
+  .emscripten{
+     width: 100%;
+     height: 100%;
+  } 
+  margin-top: 45vh;
+
+}
+
+.game-window{
+  text-align: center;
+  width: 700px;
+  heigh: 1120px;
+  margin-bottom: 50px;
 }

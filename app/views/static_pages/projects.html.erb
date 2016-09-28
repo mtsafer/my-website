@@ -7,6 +7,37 @@
 		<br>
 
 		<div class="row project">
+			<h1>Procedural Roguelike Level Generator - Game</h1>
+			<div class="col-lg-7 col-md-12 features-col">
+				<h3>Features</h3>
+				<h2>Generates a procedural level. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#procedural"></span></h2>
+				<h2>Aim assist (linked to accuracy value). <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#aim-assist"></span></h2>
+				<h2>Mandatory room completion. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#room-completion"></span></h2>
+				<h2>Smart pathing enemies. <span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#pathing"></span></h2>
+				<h2>More features coming soon (I intend to make a complete roguelike game).</h2>
+			</div>
+			<div class="col-lg-5 col-md-12 picture-col">
+				<div class="row">
+					<div class="col-lg-3 col-sm-2 complexity-col">
+						<h2 class="complexity">Complexity: </h2>
+					</div>
+					<div class="col-lg-8 col-sm-10">
+						<div class="progress">
+						  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85"
+						  aria-valuemin="0" aria-valuemax="100" style="width:85%">
+						    8.5 / 10
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div data-toggle="modal" data-target="#roguelike-features" class="btn btn-info"><span class="glyphicon glyphicon-th-list" ></span> About</div> 
+				<a href= "<%= roguelike_path %>" ><div class='btn btn-success demo-btn'>Try the demo!</div></a>
+			</div>
+		</div>
+		<div class="page-break"></div>
+
+
+		<div class="row project">
 			<h1>Vezzelution.net - Website</h1>
 			<div class="col-lg-7 col-md-12 features-col">
 				<h3>Features</h3>
@@ -1005,6 +1036,137 @@
 	      	<p>The new_game method creates and returns a new Hangman object. It also destroys the dictionary object used to find the random word to play with.</p>
 
 	      	<p>Then the game object returned from new_game is stored in session[:game]. This means that each user can play the game independantly of other users.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+<!-- ROGUELIKE MODALS -->
+
+	<!-- Roguelike Modal -->
+	<div id="procedural" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Roguelike Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Procedural Strategy</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>My strategy for level generation</h2>
+	      	<p>In order to make a proper roguelike game, I needed to build a procedural level generator.</p>
+	      	<p>In order to achieve this, I first built 15 copies of the same room, each with a different set of door combinations. For example, one room has 4 doors, (N, S, E, W). Another room might only have 2 doors, (N, S).</p>
+	      	<p>I then put each of these 15 rooms into an array, and randomly selected a room from the array.</p>
+	      	<p>Before placing the new room, the generator checks if the room will fit there, that is, if the doors line up with its neighbor rooms' doors. If it does not line up, a new room is randomly selected.</p>
+	      	<p>Once the desired number of rooms are created, the generator will attempt to finish off the level build, by only adding rooms that don't have doors leading to empty space.</p>
+	      	<p>If the resulting level contains more rooms than a predefined max, or if there are less rooms than a predefined min, the generator will restart the build.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- Roguelike Modal -->
+	<div id="aim-assist" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Roguelike Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Aim Assist</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>What's the deal with this aim assist?</h2>
+	      	<p>I am drawing inspiration for this game from Binding of Isaac, and Enter the Gungeon.</p>
+	      	<p>I am barrowing the controls from Binding of Isaac, but I am using the aim assist concept from Enter the Gungeon.</p>
+	      	<p></p>
+	      	<p>For those that do not know these games, the aim assist will lock on to the nearest enemy that is within 'x' degrees of where you are currently aiming, where 'x' is you accuracy value.</p>
+	      	<p>What this means, is you are able to focus less on aiming, and more on dodging. Additionaly, the game is primed to allow for items that adjust accuracy, since the aim assist is directly linked to the player's accuracy stat.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- Roguelike Modal -->
+	<div id="room-completion" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Roguelike Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Completing Rooms</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>This is where I die.</h2>
+	      	<p>In typical roguelike fashion, once you enter a room, you are locked into a life and death struggle with the various enemies in the room.</p>
+	      	<p>In order to accomplish this, the doors (which start 10 units above the game and are invisible), slam down and fade in once the player enters the room, barring the escape.</p>
+	      	<p>Once the player defeats all enemies in all waves, the doors fade out and fly away, allowing the player to leave the room.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- Roguelike Modal -->
+	<div id="pathing" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Roguelike Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Enemy Navigation</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Using the Unity NavSystem</h2>
+	      	<p>Unity is very helpful on this front, in that the engine provides a navsystem.</p>
+	      	<p>It works by allowing the developer to bake a navmesh into the scene, which includes all of the information to let an agent navigate the level inteligently.</p>
+	      	<p></p>
+	      	<p>Unfortunately, unity does not allow for dynamic navmesh baking, meaning that the system doesn't work for dynamically generated levels, such as mine.</p>
+	      	<p>HOWEVER! I was able to work around this by baking a giant solid navmesh, and then assigning all wall objects to dynamically carve a hole in the navmesh.</p>
+	      	<p>You won't see much impressive smart pathing in the current demo build, but that is only because my simple room, used for a proof of concept, doesn't have any obstacles for the enemies to path around.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- Roguelike Modal -->
+	<div id="roguelike-features" class="modal fade main" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Roguelike Modal about-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Roguelike - About</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<h2>Why am I building a game?</h2>
+	      	<p>I intend to make an engaging, fun, extremely challenging roguelike.</p>
+	      	<p>I have always enjoyed the playstyle and concept of this genre of game, and after playing a lot of the recently released "Enter the Gungeon", I knew I had to give this project a shot.</p>
+	      	<p>The game utilizes procedural level generation (the code for which I designed myself).</p>
+	      	<p>I am only at the proof of concept stage, but am ready to begin creating a lot of variety in weapons, floors, rooms, enemies, items, and characters.</p>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

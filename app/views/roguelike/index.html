@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | RogueLike</title>
+    <link rel="stylesheet" href="/data/TemplateData/style.css">
+    <link rel="shortcut icon" href="/data/TemplateData/favicon.ico" />
+    <script src="/data/TemplateData/UnityProgress.js"></script>
+  </head>
+  <body class="template">
+    <h1>Please wait for the build to load (5-20 seconds).</h1>
+    <h2>Once the build has loaded, please wait aproximately 5 seconds for the generator to build the level.</h2>
+    <h2>Refresh the page if the loader gets stuck for more than 30 seconds.</h2>
+
+    <p class="header"><span>Unity WebGL Player | </span>RogueLike</p>
+     <!--div class="game-window"--> 
+      <div class="template-wrap clear">
+          <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+          <br>
+        <div class="logo"></div>
+        <!--<div class="fullscreen"><img src="/data/TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>-->
+        <!--<div class="title"><a href="/data/DownloadRoguelike/BuildWithMinimap.exe" download><div class="btn btn-success pull-left"><span class="glyphicon glyphicon-download" ></span> Download</div></a></div>-->
+        <div class="title"><div data-toggle="modal" data-target="#roguelike-features" class="btn btn-info pull-left"><span class="glyphicon glyphicon-screenshot" ></span> Controls</div></div>
+      </div>
+    <!--/div-->
+    <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "/data/Release/WebBuild.data",
+    codeUrl: "/data/Release/WebBuild.js",
+    memUrl: "/data/Release/WebBuild.mem",
+    
+  };
+</script>
+<script src="/data/Release/UnityLoader.js"></script>
+
+  </body>
+</html>
+
+
+<!-- MODALS -->
+
+      <!-- Modal -->
+  <div id="roguelike-features" class="modal fade main" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal about-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Roguelike Controls</h4>
+        </div>
+        <div class="modal-body">
+          <p> Use "WADS" to move and arrow keys to aim/fire.</p>
+          <p> You may not leave a room until all of the enemies are defeated.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>

@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get  '/resume'   => 'static_pages#resume',   as: :resume
   resources 'contacts', only: [:new, :create]
   get  '/contacts', to: redirect('/contacts/new')
+  get  '/roguelike' => 'roguelike#index', as: :roguelike
 
 end
